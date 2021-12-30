@@ -24,7 +24,7 @@ cpr = library(
 	sources: sources,
 	dependencies: [libcurl],
 	install: true,
-	install_dir: [true],
+	install_dir: get_option('prefix') / get_option('libinstdir'),
 	include_directories: incdir
 )
 
